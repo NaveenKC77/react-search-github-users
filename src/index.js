@@ -22,9 +22,6 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
-// REACT_APP_AUTH_DOMAIN = "dev-u0f8mq2b.us.auth0.com";
-// REACT_APP_AUTH_CLIENT_ID = "fxaqLJOFHiEKFNxdDQ0TvPMBtnuZqjBl";
-
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA

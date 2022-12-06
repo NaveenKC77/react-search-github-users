@@ -2,19 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { MdBusiness, MdLocationOn, MdLink } from "react-icons/md";
 import { useGlobalContext } from "../context/context";
-const Card = ({}) => {
+const Card = () => {
   const { githubUser } = useGlobalContext();
-  const {
-    avatar_url,
-    bio,
-    login,
-    blog,
-    company,
-    following_url,
-    id,
-    name,
-    location,
-  } = githubUser;
+  const { avatar_url, bio, login, blog, company, name, location } = githubUser;
   return (
     <Wrapper>
       <header>
