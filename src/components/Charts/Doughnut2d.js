@@ -1,6 +1,5 @@
 // Include react
 import React from "react";
-import ReactDOM from "react-dom";
 
 // Include the react-fusioncharts component
 import ReactFC from "react-fusioncharts";

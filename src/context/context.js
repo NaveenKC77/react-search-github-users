@@ -32,11 +32,11 @@ const GithubProvider = ({ children }) => {
   };
 
   const fetchUser = async (user) => {
+    setLoading(true);
     const response = await axios(`${rootUrl}/users/${user}`).catch((err) =>
       console.log(error)
     );
     if (response) {
-      console.log(response.data);
       setGithubUser(response.data);
 
       const { login } = response.data;
@@ -49,6 +49,7 @@ const GithubProvider = ({ children }) => {
         const [followers, repos] = resonse;
         setFollowers(followers.value.data);
         setRepos(repos.value.data);
+        setLoading(false);
       }
     }
   };

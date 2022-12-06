@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { GithubContext } from "../context/context";
-import { Chart, Pie3D, Column3D, Bar3D, Doughnut2D } from "./Charts";
+
+import { Chart, Column3D, Bar3D, Doughnut2D } from "./Charts";
 import { useGlobalContext } from "../context/context";
-import Donught2D from "./Charts/Doughnut2d";
+
 const Repos = () => {
   const { repos } = useGlobalContext();
 
@@ -83,7 +83,7 @@ const Wrapper = styled.div`
   display: grid;
   justify-items: center;
   gap: 2rem;
-  text-align:center;
+  text-align: center;
   @media (min-width: 800px) {
     grid-template-columns: 1fr 1fr;
   }
@@ -94,22 +94,18 @@ const Wrapper = styled.div`
 
   div {
     width: 100% !important;
-    
   }
   .fusioncharts-container {
     width: 100% !important;
-    
   }
   svg {
     width: 100% !important;
-    
+
     border-radius: var(--radius) !important;
   }
   .chart {
-
-    height: 500px
+    height: 500px;
     width: 100% !important;
-
   }
 `;
 

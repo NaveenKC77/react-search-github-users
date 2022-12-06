@@ -1,8 +1,8 @@
 import React from "react";
-import { GithubContext, useGlobalContext } from "../context/context";
+import { useGlobalContext } from "../context/context";
 import styled from "styled-components";
 import { GoRepo, GoGist } from "react-icons/go";
-import Card from "./Card";
+
 import { FiUsers, FiUserPlus } from "react-icons/fi";
 
 const UserInfo = () => {

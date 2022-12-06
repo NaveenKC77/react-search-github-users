@@ -8,7 +8,9 @@ function AuthWrapper({ children }) {
   if (isLoading) {
     return (
       <Wrapper>
-        <div className="loading"></div>
+        <div className="loading">
+          <img src={loadingGif} className="loading-img" alt="" />
+        </div>
       </Wrapper>
     );
   }

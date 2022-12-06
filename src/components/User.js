@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { useGlobalContext } from "../context/context";
+
 import Card from "./Card";
 import Followers from "./Followers";
 const User = () => {
