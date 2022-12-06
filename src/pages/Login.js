@@ -14,6 +14,10 @@ const Login = () => {
         <button className="btn" onClick={() => loginWithRedirect()}>
           Log in / Sign Up
         </button>
+        <p styles={{ color: "red" }}>
+          login credentials <span>username:test@test.com </span>
+          password:Test@123
+        </p>
       </div>
     </Wrapper>
   );
